@@ -1,0 +1,38 @@
+{
+  "name": "numc-cli",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./cli": "./bin/numc.mjs"
+  },
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "numc": "./bin/numc.mjs",
+    "numc-cli": "./bin/numc.mjs"
+  },
+  "scripts": {
+    "build": "unbuild",
+    "build:stub": "unbuild --stub",
+    "numc": "node ./bin/numc.mjs",
+    "prepack": "unbuild",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "citty": "^0.1.4"
+  },
+  "devDependencies": {
+    "@nuxt/kit": "^3.8.0",
+    "@types/node": "^20.8.7",
+    "consola": "^3.2.3",
+    "mlly": "^1.4.2",
+    "nuxt": "^3.8.0",
+    "nuxt-component-meta": "^0.5.4",
+    "std-env": "^3.4.3",
+    "unbuild": "^2.0.0"
+  }
+}
